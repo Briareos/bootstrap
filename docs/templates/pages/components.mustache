@@ -35,13 +35,34 @@
   </div>
 </header>
 
+<div class="row">
+  <div class="span3 bs-docs-sidebar">
+    <ul class="nav nav-list bs-docs-sidenav">
+      <li><a href="#dropdowns">{{_i}}Dropdowns{{/i}} <i class="icon-chevron-right"></i></a></li>
+      <li><a href="#buttonGroups">{{_i}}Button groups{{/i}} <i class="icon-chevron-right"></i></a></li>
+      <li><a href="#buttonDropdowns">{{_i}}Button dropdowns{{/i}} <i class="icon-chevron-right"></i></a></li>
+      <li><a href="#navs">{{_i}}Navs{{/i}} <i class="icon-chevron-right"></i></a></li>
+      <li><a href="#navbar">{{_i}}Navbar{{/i}} <i class="icon-chevron-right"></i></a></li>
+      <li><a href="#breadcrumbs">{{_i}}Breadcrumbs{{/i}} <i class="icon-chevron-right"></i></a></li>
+      <li><a href="#pagination">{{_i}}Pagination{{/i}} <i class="icon-chevron-right"></i></a></li>
+      <li><a href="#labels">{{_i}}Labels{{/i}} <i class="icon-chevron-right"></i></a></li>
+      <li><a href="#badges">{{_i}}Badges{{/i}} <i class="icon-chevron-right"></i></a></li>
+      <li><a href="#typography">{{_i}}Typography{{/i}} <i class="icon-chevron-right"></i></a></li>
+      <li><a href="#thumbnails">{{_i}}Thumbnails{{/i}} <i class="icon-chevron-right"></i></a></li>
+      <li><a href="#alerts">{{_i}}Alerts{{/i}} <i class="icon-chevron-right"></i></a></li>
+      <li><a href="#progress">{{_i}}Progress bars{{/i}} <i class="icon-chevron-right"></i></a></li>
+      <li><a href="#misc">{{_i}}Misc{{/i}} <i class="icon-chevron-right"></i></a></li>
+    </ul>
+  </div>
+  <div class="span9">
+
 
 
 <!-- Dropdowns
 ================================================== -->
 <section id="dropdowns">
   <div class="page-header">
-    <h1>{{_i}}Dropdown menus{{/i}} <small>{{_i}}Dropdown and dropup menus for contextual actions{{/i}}</small></h1>
+    <h1>{{_i}}Dropdown menus{{/i}}</h1>
   </div>
 
   <h2>{{_i}}Example{{/i}}</h2>
@@ -123,27 +144,13 @@
 ================================================== -->
 <section id="buttonGroups">
   <div class="page-header">
-    <h1>{{_i}}Button groups{{/i}} <small>{{_i}}Join buttons for more toolbar-like functionality{{/i}}</small></h1>
+    <h1>{{_i}}Button groups{{/i}}</h1>
   </div>
 
-
-  <h2>{{_i}}Description and best practices{{/i}}</h2>
-  <p>{{_i}}Use button groups to join multiple buttons together as one composite component. Build them with a series of <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> elements. We recommend the following guidelines for using button groups and toolbars:{{/i}}</p>
-  <ul>
-    <li>{{_i}}Always use the same element in a single button group, <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code>.{{/i}}</li>
-    <li>{{_i}}Don't mix buttons of different colors in the same button group.{{/i}}</li>
-    <li>{{_i}}Use icons in addition to or instead of text, but be sure include alt and title text where appropriate.{{/i}}</li>
-  </ul>
-  <p>{{_i}}<span class="label label-info">Related</span> Button groups with dropdowns (see below) should be called out separately and always include a dropdown caret to indicate intended behavior.{{/i}}</p>
-
-
-  <hr class="bs-docs-separator">
-
-
-  <h2>{{_i}}Examples and variations{{/i}}</h2>
+  <h2>{{_i}}Examples{{/i}}</h2>
   <p>{{_i}}Two basic options, along with two more specific variations.{{/i}}</p>
 
-  <h3>{{_i}}Basic button group{{/i}}</h3>
+  <h3>{{_i}}Single button group{{/i}}</h3>
   <p>{{_i}}Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.{{/i}}</p>
   <div class="bs-docs-example">
     <div class="btn-group" style="margin: 9px 0 5px;">
@@ -160,7 +167,7 @@
 &lt;/div&gt;
 </pre>
 
-  <h3>{{_i}}Toolbar example{{/i}}</h3>
+  <h3>{{_i}}Multiple button groups{{/i}}</h3>
   <p>{{_i}}Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> for more complex components.{{/i}}</p>
   <div class="bs-docs-example">
     <div class="btn-toolbar" style="margin: 0;">
@@ -188,11 +195,7 @@
 &lt;/div&gt;
 </pre>
 
-
-  <hr class="bs-docs-separator">
-
-
-  <h2>{{_i}}Vertical button groups{{/i}}</h2>
+  <h3>{{_i}}Vertical button groups{{/i}}</h3>
   <p>{{_i}}Make a set of buttons appear vertically stacked rather than horizontally.{{/i}}</p>
   <div class="bs-docs-example">
     <div class="btn-group btn-group-vertical">
@@ -212,10 +215,10 @@
   <hr class="bs-docs-separator">
 
 
-  <h3>{{_i}}Checkbox and radio flavors{{/i}}</h3>
+  <h4>{{_i}}Checkbox and radio flavors{{/i}}</h4>
   <p>{{_i}}Button groups can also function as radios, where only one button may be active, or checkboxes, where any number of buttons may be active. View <a href="./javascript.html#buttons">the Javascript docs</a> for that.{{/i}}</p>
 
-  <h3>{{_i}}Dropdowns in button groups{{/i}}</h3>
+  <h4>{{_i}}Dropdowns in button groups{{/i}}</h4>
   <p><span class="label label-info">{{_i}}Heads up!{{/i}}</span> {{_i}}Buttons with dropdowns must be individually wrapped in their own <code>.btn-group</code> within a <code>.btn-toolbar</code> for proper rendering.{{/i}}</p>
 </section>
 
@@ -225,7 +228,7 @@
 ================================================== -->
 <section id="buttonDropdowns">
   <div class="page-header">
-    <h1>{{_i}}Button dropdown menus{{/i}} <small>{{_i}}Built on button groups to provide contextual menus{{/i}}</small></h1>
+    <h1>{{_i}}Button dropdown menus{{/i}}</h1>
   </div>
 
 
@@ -560,7 +563,7 @@
 ================================================== -->
 <section id="navs">
   <div class="page-header">
-    <h1>{{_i}}Nav, tabs, and pills{{/i}} <small>{{_i}}Highly customizable list-style navigation{{/i}}</small></h1>
+    <h1>{{_i}}Nav: tabs, pills, and lists{{/i}}</small></h1>
   </div>
 
   <h2>{{_i}}Lightweight defaults{{/i}} <small>{{_i}}Same markup, different classes{{/i}}</small></h2>
@@ -1177,6 +1180,63 @@
     <strong>{{_i}}Heads up!{{/i}}</strong> The responsive navbar requires the <a href="./javascript.html#collapse">collapse plugin</a> and <a href="./scaffolding.html#responsive">responsive Bootstrap CSS file</a>.
   </div>
 
+
+  <hr class="bs-docs-separator">
+
+
+  <h2>{{_i}}Responsive navbar{{/i}}</h2>
+  <p>{{_i}}To implement a collapsing responsive navbar, wrap your navbar content in a containing div, <code>.nav-collapse.collapse</code>, and add the navbar toggle button, <code>.btn-navbar</code>.{{/i}}</p>
+  <div class="bs-docs-example">
+    <div class="navbar navbar-subnav" style="position: static;">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">{{_i}}Title{{/i}}</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">{{_i}}Home{{/i}}</a></li>
+              <li><a href="#">{{_i}}Link{{/i}}</a></li>
+              <li><a href="#">{{_i}}Link{{/i}}</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{_i}}Dropdown{{/i}} <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">{{_i}}Action{{/i}}</a></li>
+                  <li><a href="#">{{_i}}Another action{{/i}}</a></li>
+                  <li><a href="#">{{_i}}Something else here{{/i}}</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">{{_i}}Separated link{{/i}}</a></li>
+                  <li><a href="#">{{_i}}One more separated link{{/i}}</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-search pull-left" action="">
+              <input type="text" class="search-query span2" placeholder="Search">
+            </form>
+            <ul class="nav pull-right">
+              <li><a href="#">{{_i}}Link{{/i}}</a></li>
+              <li class="divider-vertical"></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{_i}}Dropdown{{/i}} <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">{{_i}}Action{{/i}}</a></li>
+                  <li><a href="#">{{_i}}Another action{{/i}}</a></li>
+                  <li><a href="#">{{_i}}Something else here{{/i}}</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">{{_i}}Separated link{{/i}}</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.nav-collapse -->
+        </div>
+      </div><!-- /navbar-inner -->
+    </div><!-- /navbar -->
+  </div>{{! /example }}
+
 </section>
 
 
@@ -1602,53 +1662,67 @@
 
   <h2>{{_i}}Default thumbnails{{/i}}</h2>
   <p>{{_i}}By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.{{/i}}</p>
-  <ul class="thumbnails">
-    <li class="span3">
-      <a href="#" class="thumbnail">
-        <img src="http://placehold.it/260x180" alt="">
-      </a>
-    </li>
-    <li class="span3">
-      <a href="#" class="thumbnail">
-        <img src="http://placehold.it/260x180" alt="">
-      </a>
-    </li>
-    <li class="span3">
-      <a href="#" class="thumbnail">
-        <img src="http://placehold.it/260x180" alt="">
-      </a>
-    </li>
-    <li class="span3">
-      <a href="#" class="thumbnail">
-        <img src="http://placehold.it/260x180" alt="">
-      </a>
-    </li>
-  </ul>
+  <div class="row-fluid">
+    <ul class="thumbnails">
+      <li class="span3">
+        <a href="#" class="thumbnail">
+          <img src="http://placehold.it/260x180" alt="">
+        </a>
+      </li>
+      <li class="span3">
+        <a href="#" class="thumbnail">
+          <img src="http://placehold.it/260x180" alt="">
+        </a>
+      </li>
+      <li class="span3">
+        <a href="#" class="thumbnail">
+          <img src="http://placehold.it/260x180" alt="">
+        </a>
+      </li>
+      <li class="span3">
+        <a href="#" class="thumbnail">
+          <img src="http://placehold.it/260x180" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
 
   <h2>{{_i}}Highly customizable{{/i}}</h2>
   <p>{{_i}}With a bit of extra markup, it's possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails.{{/i}}</p>
-  <ul class="thumbnails">
-    <li class="span3">
-      <div class="thumbnail">
-        <img src="http://placehold.it/260x180" alt="">
-        <div class="caption">
-          <h5>{{_i}}Thumbnail label{{/i}}</h5>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a href="#" class="btn btn-primary">{{_i}}Action{{/i}}</a> <a href="#" class="btn">{{_i}}Action{{/i}}</a></p>
+  <div class="row-fluid">
+    <ul class="thumbnails">
+      <li class="span4">
+        <div class="thumbnail">
+          <img src="http://placehold.it/300x200" alt="">
+          <div class="caption">
+            <h3>{{_i}}Thumbnail label{{/i}}</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a href="#" class="btn btn-primary">{{_i}}Action{{/i}}</a> <a href="#" class="btn">{{_i}}Action{{/i}}</a></p>
+          </div>
         </div>
-      </div>
-    </li>
-    <li class="span3">
-      <div class="thumbnail">
-        <img src="http://placehold.it/260x180" alt="">
-        <div class="caption">
-          <h5>{{_i}}Thumbnail label{{/i}}</h5>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a href="#" class="btn btn-primary">{{_i}}Action{{/i}}</a> <a href="#" class="btn">{{_i}}Action{{/i}}</a></p>
+      </li>
+      <li class="span4">
+        <div class="thumbnail">
+          <img src="http://placehold.it/300x200" alt="">
+          <div class="caption">
+            <h3>{{_i}}Thumbnail label{{/i}}</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a href="#" class="btn btn-primary">{{_i}}Action{{/i}}</a> <a href="#" class="btn">{{_i}}Action{{/i}}</a></p>
+          </div>
         </div>
-      </div>
-    </li>
-  </ul>
+      </li>
+      <li class="span4">
+        <div class="thumbnail">
+          <img src="http://placehold.it/300x200" alt="">
+          <div class="caption">
+            <h3>{{_i}}Thumbnail label{{/i}}</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a href="#" class="btn btn-primary">{{_i}}Action{{/i}}</a> <a href="#" class="btn">{{_i}}Action{{/i}}</a></p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
 
   <h3>{{_i}}Why use thumbnails{{/i}}</h3>
   <p>{{_i}}Thumbnails (previously <code>.media-grid</code> up until v1.4) are great for grids of photos or videos, image search results, retail products, portfolios, and much more. They can be links or static content.{{/i}}</p>
@@ -1663,9 +1737,9 @@
   <p>{{_i}}As mentioned previously, the required markup for thumbnails is light and straightforward. Here's a look at the default setup <strong>for linked images</strong>:{{/i}}</p>
 <pre class="prettyprint linenums">
 &lt;ul class="thumbnails"&gt;
-  &lt;li class="span3"&gt;
+  &lt;li class="span4"&gt;
     &lt;a href="#" class="thumbnail"&gt;
-      &lt;img src="http://placehold.it/260x180" alt=""&gt;
+      &lt;img src="http://placehold.it/300x200" alt=""&gt;
     &lt;/a&gt;
   &lt;/li&gt;
   ...
@@ -1674,11 +1748,11 @@
   <p>{{_i}}For custom HTML content in thumbnails, the markup changes slightly. To allow block level content anywhere, we swap the <code>&lt;a&gt;</code> for a <code>&lt;div&gt;</code> like so:{{/i}}</p>
 <pre class="prettyprint linenums">
 &lt;ul class="thumbnails"&gt;
-  &lt;li class="span3"&gt;
+  &lt;li class="span4"&gt;
     &lt;div class="thumbnail"&gt;
-      &lt;img src="http://placehold.it/260x180" alt=""&gt;
-      &lt;h5&gt;{{_i}}Thumbnail label{{/i}}&lt;/h5&gt;
-      &lt;p&gt;{{_i}}Thumbnail caption right here...{{/i}}&lt;/p&gt;
+      &lt;img src="http://placehold.it/300x200" alt=""&gt;
+      &lt;h3&gt;{{_i}}Thumbnail label{{/i}}&lt;/h3&gt;
+      &lt;p&gt;{{_i}}Thumbnail caption...{{/i}}&lt;/p&gt;
     &lt;/div&gt;
   &lt;/li&gt;
   ...
@@ -1691,6 +1765,11 @@
     <li class="span4">
       <a href="#" class="thumbnail">
         <img src="http://placehold.it/360x268" alt="">
+      </a>
+    </li>
+    <li class="span2">
+      <a href="#" class="thumbnail">
+        <img src="http://placehold.it/160x120" alt="">
       </a>
     </li>
     <li class="span2">
@@ -2066,3 +2145,6 @@ class="clearfix"
 </pre>
 
 </section>
+
+  </div>
+</div>
